@@ -101,12 +101,14 @@
 }
 
 #n6 {
-    background-image: url(/images/map.png);
+    /* background-image: url(/images/map.png);
     height: 100vh;
     padding: 0px 10%;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    background-size: 100% 100%;
+    background-size: 100% 100%; */
+    background-color: #E3D9D5;
+    padding: 30px;
 }
 
 #n7 {
@@ -134,6 +136,15 @@ nav ul li {
     list-style: none;
     display: inline;
     margin: 0px 20px;
+    padding: 5px 10px;
+}
+nav ul li:hover {
+    background-color: #f7e2d8;
+    color: #B77E66;
+}
+
+nav ul li a{
+    text-decoration: none;
 }
 
 #n1 .description-container {
@@ -166,6 +177,11 @@ nav ul li {
 #n2 h1 {
     font-size: 35px;
     font-weight: bold;
+    color: #471E22;
+}
+
+#n2 p {
+    color: #471E22;
 }
 
 button {
@@ -175,6 +191,11 @@ button {
     border-style: none;
     border-radius: 10px;
     cursor: pointer;
+}
+
+button:hover{
+    background-color: #f7e2d8;
+    color: #B77E66;
 }
 
 #n1 button {
@@ -257,6 +278,7 @@ button {
     cursor: pointer;
 }
 
+
 #n4 .card {
     border-radius: 20px;
     width: 220px;
@@ -267,7 +289,14 @@ button {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    transition: 300ms;
+    cursor: pointer;
 }
+
+#n4 .card:hover {
+    transform: scale(1.05)
+}
+
 
 #n4 .card .image img {
     border-radius: 20px;
@@ -295,4 +324,10 @@ button {
     background-color: #A0583C;
     box-shadow: 0px 2px 25px #00000036;
     padding: 10px 15px;
+}
+
+#n4 .card .card-bottom button:hover {
+    background-color: #f7e2d8;
+    color: #B77E66;
+
 }
