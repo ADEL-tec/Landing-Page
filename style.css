@@ -1,0 +1,298 @@
+@font-face {
+    font-family: "Poppins";
+    src: url("./fonts/Poppins/Poppins-Medium.ttf");
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: "Poppins";
+    src: url("./fonts/Poppins/Poppins-Regular.ttf");
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "Poppins";
+    src: url("./fonts/Poppins/Poppins-Bold.ttf");
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: "Poppins";
+    src: url("./fonts/Poppins/Poppins-Light.ttf");
+    font-weight: 200;
+}
+
+@font-face {
+    font-family: "IrishGrover";
+    src: url("./fonts/Irish_Grover/IrishGrover-Regular.ttf");
+    font-weight: 200;
+}
+
+* {
+    padding: 0px;
+    margin: 0px;
+    color: white;
+}
+
+.content-vh {
+    height: 100vh;
+    padding: 0px 10%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Poppins', Arial, sans-serif;
+}
+
+#n1 {
+    background-image: url(/images/n1.png);
+    display: flex;
+    flex-direction: column;
+}
+
+#n2 {
+    background-image: url(/images/n2.png);
+    align-items: end;
+
+}
+
+#n3 {
+    background-image: url(/images/n3.png);
+    height: 100vh;
+    padding: 0px 10%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    font-family: 'IrishGrover', Arial, Helvetica, sans-serif;
+}
+
+#n3 .right {
+    display: flex;
+    flex-direction: column;
+}
+
+#n3 .right .right-top,
+#n3 .right .right-bottom {
+    display: flex;
+}
+
+#n3 .right .right-item {
+    display: flex;
+    flex-direction: column;
+    font-size: 36px;
+}
+
+#n4 {
+    background-image: url(/images/n4.png);
+    justify-content: center;
+}
+
+#n5 {
+    background-image: url(/images/n5.png);
+    height: 100vh;
+    padding: 0px 10%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+}
+
+#n6 {
+    background-image: url(/images/map.png);
+    height: 100vh;
+    padding: 0px 10%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+}
+
+#n7 {
+    background-image: url(/images/footer.png);
+    height: 100vh;
+    padding: 0px 10%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul {
+    list-style: none;
+    display: inline;
+    text-transform: uppercase;
+}
+
+nav ul li {
+    list-style: none;
+    display: inline;
+    margin: 0px 20px;
+}
+
+#n1 .description-container {
+    width: 530px;
+}
+
+#n2 .description-container {
+    width: 555px;
+    direction: rtl;
+}
+
+.description-container {
+    flex: 1;
+    position: relative;
+
+}
+
+.description-container div {
+    position: absolute;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+#n1 h1 {
+    font-weight: bold;
+    font-size: 64px;
+}
+
+#n2 h1 {
+    font-size: 35px;
+    font-weight: bold;
+}
+
+button {
+    background-color: #B77E66;
+    text-transform: uppercase;
+    font-weight: bold;
+    border-style: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+#n1 button {
+    height: 88px;
+    width: 330px;
+    font-size: 24px;
+    margin-top: 30px;
+    box-shadow: 0px 10px 4px #0000004e;
+}
+
+#n2 button {
+    height: 44px;
+    width: 180px;
+    font-size: 15px;
+    margin-top: 30px;
+}
+
+#n3 .left h1 {
+    background-color: #221b1871;
+    display: inline;
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-size: 64px;
+}
+
+#n3 .right-item {
+    margin: 20px;
+}
+
+#n4 h1 {
+    color: #B77E66;
+    font-size: 50px;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: white;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+#n4 .category {
+    color: #B77E66;
+    text-decoration: underline;
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+#n4 .slide {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+
+#n4 .slide .left-right-btns {
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    transform: translateY(-25px);
+
+}
+
+#n4 .slide .left-right-btns .left {
+    transform: translateX(-80%);
+}
+
+#n4 .slide .left-right-btns .right {
+    transform: translateX(80%);
+}
+
+#n4 .slide .left-right-btns .btn {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    background-color: #ffffffb0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 4px 4px #00000035;
+    cursor: pointer;
+}
+
+#n4 .card {
+    border-radius: 20px;
+    width: 220px;
+    height: 445px;
+    background-color: #734a39cb;
+    box-shadow: 0px 2px 20px 4px #00000037;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#n4 .card .image img {
+    border-radius: 20px;
+    width: 100%;
+    height: 150px;
+}
+
+#n4 .card h3 {
+    font-size: 25px;
+}
+
+#n4 .card p {
+    color: #FFFADA;
+    font-size: 12px;
+    margin-top: 10px;
+    margin-bottom: 40px;
+}
+
+#n4 .card .card-bottom {
+    display: flex;
+    justify-content: space-between;
+}
+
+#n4 .card .card-bottom button {
+    background-color: #A0583C;
+    box-shadow: 0px 2px 25px #00000036;
+    padding: 10px 15px;
+}
